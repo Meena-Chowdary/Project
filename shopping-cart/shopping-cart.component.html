@@ -1,0 +1,44 @@
+<body>
+    <section class="container-fluid bg-light p-5">
+        <h3>Items List</h3>
+        <!-- <div class="card" *ngIf="items.length==0">
+            <p class="card-text">No Items Found</p>
+        </div> -->
+    
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                <th>ItemId</th>
+                <th>ItemName</th>
+                <th>Quantity</th>
+                <th>price</th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of items">
+                    <td>{{i.product.newItemId}}</td>
+                    <td>{{i.product.itemName}}</td>
+                    <td>{{i.product.description}}</td>
+                    <td>{{i.product.sellingPrice}}</td>
+                    <td>
+                        <a class="btn btn-warning btn-sm mr-2"
+                        (click)="remove(i.product.id)">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4"><strong>
+                        {{total}} price
+                    </strong></th>
+                </tr>
+        </table>
+    </section>
+    <div class="row">
+        <div class="col-lg-10">
+            <a href="checkout" class="btn btn-secondary float-right btn-lg" role="button">Check Out</a>
+        </div>
+    </div>
+    
+    </body>
