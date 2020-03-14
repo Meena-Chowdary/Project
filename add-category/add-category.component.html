@@ -1,0 +1,92 @@
+<h2>Add Products To Be Sold</h2>
+<div class="container">
+  <form name="form" (ngSubmit)="save()" #f="ngForm">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="SBID">SubCategory ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="SBID" name="SubCategory" [(ngModel)]="item.subCategory.subCategoryId"
+          placeholder="Enter Subcategory id">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="SBID">Seller Id</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="SBID" name="SubCategory" [(ngModel)]="item.seller.userId"
+          placeholder="Enter Subcategory id">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="PID">Discount id</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="DID" name="discount id" [(ngModel)]="item.discount.discountId"
+          placeholder="Enter Discount id">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="PID">Start Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="PID" name="product id" [(ngModel)]="item.discount.startDate"
+          placeholder="Enter Product id">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="PID">End Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="PID" name="product id" [(ngModel)]="item.discount.endDate"
+          placeholder="Enter Product id">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="PNM">Item Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="PNM" name="firstname" [(ngModel)]="item.itemName" placeholder="Enter Product name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="PDESC"> ITEM DESCRIPTION</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." [(ngModel)]="item.description"
+          style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="PRICE">Price</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="PRICE" name="Price" [(ngModel)]="item.sellingPrice" placeholder="Enter price of the product">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="STOCK">Quantity</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="STOCK" name="Discount" [(ngModel)]="item.stock" placeholder="Enter stock">
+      </div>
+    </div>
+    
+    <div class="row">
+      <input type="submit" name="submit" (click)="ngSubmit" class="btn btn-info btn-md" value="submit">
+    </div>
+  </form>
+</div>

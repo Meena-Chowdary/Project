@@ -1,0 +1,10 @@
+/* .site-blocks-cover{
+background-image: url(./assets/slider-1.jpg) ;
+background-repeat: no-repeat; 
+height:100%
+} */
+.featured-hero-product{
+    margin-top: 200px;
+    margin-left: 1px;
+    float: left;
+}
